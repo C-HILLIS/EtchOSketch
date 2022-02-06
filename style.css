@@ -1,0 +1,52 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+html{
+    margin:0px;
+    background-color: #B22222;
+}
+h1{
+    margin: 100px;
+    font-family: 'Aclonica';font-size: 22px;
+    text-align: center;
+    color: #FFFF66;
+    font-size: 55px;
+}
+#container{
+    background-color: #B22222;
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    
+}
+
+
+
+
+#grid{
+    border-style: solid;
+    background-color: #F8F0E3 ;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-cols), 1fr);
+}
+
+
+
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#erasor,#reset,#draw{
+    border-radius: 50px;
+    height: 100px;
+    background-color:white;
+    
+}
